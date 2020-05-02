@@ -140,4 +140,12 @@ router.post("/api/maintenance", passport.authenticate('jwt', {
   })
 
 
+  router.get('/', (req, res) => {
+    const appString = renderToString(<App />);
+  
+    res.send(template({
+      body: appString,
+    }));
+  });
+
   module.exports = router
