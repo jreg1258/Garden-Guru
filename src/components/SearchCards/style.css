@@ -1,0 +1,63 @@
+.services-area{
+    width: 45%;
+    margin: auto;
+}
+
+.response-container{
+    width: 75% !important;
+}
+.common-name{
+    text-transform: capitalize;
+}
+
+.add-button{
+
+    display: block;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-color: #C54648;
+    color: palegoldenrod;
+    border: none;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+
+
+}
+
+.add-button:hover{
+    background-color: palegoldenrod !important;
+    border: palegoldenrod solid 1px !important;
+    color: #C54648 !important
+    }
+
+.no-results{
+margin: auto;
+text-align: center;
+}
+
+.Toastify__toast{
+    background-color: #639a67 !important;
+    transition-delay: 50000 !important;
+    color: palegoldenrod;
+    opacity: 90%
+}
+
+.Toastify__progress-bar{
+    background-color: palegoldenrod !important ;
+}
+
+.Toastify__close-button{
+    color: palegoldenrod
+}
