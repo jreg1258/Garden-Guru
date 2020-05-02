@@ -28,10 +28,16 @@
     "toastify": "^2.0.0",
     "toastr": "^2.1.4"
   },
+<<<<<<< HEAD
   "scripts": {    
       "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "heroku-postbuild": "react-scripts build",
+=======
+  "scripts": {
+    "start": "node server.js & react-scripts start",
+    "build": "react-scripts build",
+>>>>>>> parent of 1c0ea849... changed start script
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
