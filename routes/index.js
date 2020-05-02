@@ -65,8 +65,23 @@ router.get('/api/user', passport.authenticate('jwt', {
   res.send(user)
 })
 
+router.delete('/api/plant/:id', passport.authenticate('jwt', {
+  session: false
+}), (req, res) => {
+  if ( !req.user ) {
+    alert("No User")
+  } 
+  const query = { username: req.user.username }
+  User.updateOne(query,
+    { $pull: 
+      { plants: {_id: req.params.id}}},
+    (err,res)=>{
+      if (err) {console.log(err)}
 
-
+      console.log("Deleted plant!")  
+  })
+  res.status(200)
+})
 
 router.post("/api", passport.authenticate('jwt', {
   session: false
