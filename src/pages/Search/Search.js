@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Searchform from '../../components/searchForm'
 import SearchResults from '../../components/SearchCards/index';
-import { Row } from '../../components/Grid';
 import Hamburger from '../../components/Hamburger/index';
 
 function Search() {
@@ -43,9 +42,7 @@ function Search() {
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    // if(search==="lion king"){
-    //   setResults("none")
-    // } else{
+   
       setTerm(search)
     // }
    

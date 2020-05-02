@@ -14,7 +14,7 @@ function Searchform(props) {
         <div className= "card-title">
             <h1 className = 'search-title'><span><img className ="search-logo" src={Logo} alt="Succulent Logo"/></span>SEARCH PLANTS<span><img className ="search-logo" src={Logo}alt="Succulent Logo"/></span></h1>
             <div className= "welcome-container">
-                <form className = "search-form">
+                <form onSubmit={props.handleFormSubmit} className = "search-form">
                         <div className="inner-form"> 
                         
                             <div className = "other-inner-form">
@@ -36,7 +36,6 @@ function Searchform(props) {
                                         variant="outline-secondary"
                                         id="search-button" 
                                         className="button form-control"
-                                        onClick={props.handleFormSubmit}
                                         >Search
                                     </Button>
                                 </InputGroup.Append>

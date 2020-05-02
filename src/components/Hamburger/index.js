@@ -1,4 +1,4 @@
-import React, { Component,  BrowserRouter as Router } from "react";
+import React, { Component } from "react";
 import { MDBNavbar, MDBContainer, MDBNavLink, MDBNavItem, MDBHamburgerToggler, MDBNavbarBrand, MDBNavbarNav,
 MDBCollapse } from "mdbreact";
 import navLogo from "../../images/Garden-Guru-Transparent-Super-Tiny.png"

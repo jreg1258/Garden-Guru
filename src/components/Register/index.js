@@ -52,9 +52,9 @@ render() {
   <div className="col-md-7 m-auto">
     <div className="card register-card card-body">
       <h1 className="text-center mb-3">
-          <img class ='logo' src={logo}/>
+          <img alt="Left Logo" class ='logo' src={logo}/>
         <i className="fas fa-user-plus"></i>REGISTER 
-          <img class = 'logo' src={logo}/>
+          <img alt="Right Logo" class = 'logo' src={logo}/>
       </h1>
       <form onSubmit={this.submit.bind(this)}>
         <div className="form-group">

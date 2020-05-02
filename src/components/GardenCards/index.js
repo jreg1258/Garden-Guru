@@ -1,6 +1,5 @@
-import React, { useReducer } from 'react'
+import React from 'react'
 import Logo from '../../images/Garden-Guru-Transparent.png'
-import returnPlantCard from '../SearchCards/index'
 import potted from '../../images/pottedSucculent.png'
 import { toast } from 'react-toastify' 
 import 'react-toastify/dist/ReactToastify.css'
@@ -19,12 +18,10 @@ const notify = () => {
     toast.info('Plant removed from your garden successfully',{})
 }
 
-const plantCards = props.plants
-
 const handleClick = (e)=>{
 //  console.log(e.currentTarget.dataset.name)
 let data = e.target.dataset.id
-const newCards = plantCards.filter(card => card.name !== e.currentTarget.dataset.name)
+
 fetch(`/api/plant/${data}`, {
     params: data,
     method: 'DELETE',
@@ -39,7 +36,7 @@ fetch(`/api/plant/${data}`, {
 return(
 <React.Fragment>
     <div className="bigContainer"   >
-        <h1 className = 'myGarden-title'><span><img className ="myGarden-logo" src={Logo}/></span>MY GARDEN<span><img className ="myGarden-logo" src={Logo}/></span></h1>
+        <h1 className = 'myGarden-title'><span><img alt="Left Logo" className ="myGarden-logo" src={Logo}/></span>MY GARDEN<span><img alt="Right Logo" className ="myGarden-logo" src={Logo}/></span></h1>
         <div id="services" className="services-area section-padding">
         <p className="welcome-name">Welcome, { props.name }</p>
 
@@ -57,7 +54,7 @@ return(
                 return (
                 <div key={ _id } className="col-xs-12 col-sm-6 col-md-4">
                     <div className="single-services text-center wow fadeInDown" data-wow-delay="0.2s">
-                        <img src={potted} className="services-icon"/>
+                        <img alt="Potted Plant Logo" src={potted} className="services-icon"/>
                         <div className="services-content">
                             <h3 className="plant-name">{ name }</h3> 
                             <h3 className ="plant-name">{scientific_name}</h3>

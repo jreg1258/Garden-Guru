@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PrivateRoute from './lib/PrivateRoute'
-import Login from './components/Login';
-import {Container, Row, Col} from './components/Grid';
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
 import Register from './pages/SignUp/signUp';

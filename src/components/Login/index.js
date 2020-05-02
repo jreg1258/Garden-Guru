@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom'
 import './style.css'
 import Title from '../Title'
 import succulent from '../../images/green-succulent.jpg'
-import { Row, Container, Col  } from '../Grid'
 
 export default class Login extends Component {
     
@@ -70,7 +69,7 @@ export default class Login extends Component {
         <React.Fragment>
         <div className="row">
             <div className="succulent-photo col-md-5 col-sm-5 col-xs-12">
-                <img className="succulent-photo" src={succulent} alt="Succulent Photo"/>
+                <img className="succulent-photo" src={succulent} alt="Succulent"/>
             </div>
                
 
