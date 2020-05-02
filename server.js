@@ -13,7 +13,7 @@ mongoose
 // Initializing Express
 const express = require('express'),
       app = express(),
-      port = process.env.PORT || 4000
+      port = 4000
 
 // Middlewares
 const bodyParser = require('body-parser'),
