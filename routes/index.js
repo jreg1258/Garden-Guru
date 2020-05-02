@@ -140,12 +140,26 @@ router.post("/api/maintenance", passport.authenticate('jwt', {
   })
 
 
-  router.get('/', (req, res) => {
-    const appString = renderToString(<App />);
+router.get("/", (req, res, next) => {
+    const markup = renderToString(
+      <App />
+    )
   
-    res.send(template({
-      body: appString,
-    }));
-  });
+    res.send(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+        <script src="/bundle.js" defer></script>
+          <title>SSR with RR</title>
+        </head>
+  
+        <body>
+          <div id="app">
+  ${markup}</div>
+        </body>
+      </html>
+    `
+  )
+  })
 
   module.exports = router
