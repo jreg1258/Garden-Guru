@@ -2,11 +2,11 @@
 const path = require('path')
 // MongoDB
 const mongoose = require('mongoose')
+const db = process.env.MONGODB_URI || 'mongodb+srv://alchemist:a5ZzeU0vf8r4ZZdO@cluster0-0zueo.mongodb.net/Garden-Guru?retryWrites=true&w=majority'
 
 mongoose
   .connect(
-    'mongodb+srv://alchemist:a5ZzeU0vf8r4ZZdO@cluster0-0zueo.mongodb.net/Garden-Guru?retryWrites=true&w=majority',
-   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },()=>{
+    db,{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },()=>{
     console.log(`🦢The Goose is loose 🦢`)
    })
 
