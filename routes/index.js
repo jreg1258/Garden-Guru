@@ -5,9 +5,7 @@ const express = require('express'),
   User = require('../db/Users'),
   router = express.Router()
 
-router.get('/',(req,res)=>{
-  res.status(200)
-})
+
 /* API entrypoints */
 // Singup
 router.post('/register', (req, res) => {

@@ -33,7 +33,9 @@ app.use(function(_, res, next) {
 
 // Routes
 app.use('/', require('./routes'));
-
+app.get("/*", function (req, res) {
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+})
 
 // Run server
 // Serve up static assets (usually on heroku)
