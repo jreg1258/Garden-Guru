@@ -19,6 +19,7 @@ export default class Home extends Component {
         return res.json()
         
       }).then(user=>{
+        console.log(user)
         let name = user.name
         let plants = user.plants
         

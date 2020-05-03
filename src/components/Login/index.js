@@ -34,7 +34,6 @@ export default class Login extends Component {
         }
         return res.json()
     }).then(data => {
-        console.log(data)
         if (data === false) {
         return this.setState({loggedin: false})
         }
