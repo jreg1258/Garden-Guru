@@ -36,7 +36,6 @@ function Searchform(props) {
                                         variant="outline-secondary"
                                         id="search-button" 
                                         className="button form-control"
-                                        type="submit"
                                         >Search
                                     </Button>
                                 </InputGroup.Append>

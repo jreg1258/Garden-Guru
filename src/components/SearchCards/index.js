@@ -54,9 +54,8 @@ function SearchResults(props) {
                                   Authorization: 'Bearer ' + localStorage.getItem('token'),
                                   'Content-type': 'application/json'
                                 }
-                              })
-                              .catch(err => { console.log(err) })
-                              notify()
+                              }).then( notify() )
+                                .catch(err => { console.log(err) })
                             }}>Add {item.common_name} to my garden!
                             </button>
                         </div>
