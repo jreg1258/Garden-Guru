@@ -31,7 +31,8 @@ export default class Home extends Component {
       })
     }
   
-    componentDidUpdate() {
+    componentWillUpdate() {
+      
       fetch('/api/user', {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token')
@@ -42,7 +43,7 @@ export default class Home extends Component {
       }).then(user=>{
         let plants = user.plants
         
-        this.setState({ plants:plants})
+        return this.setState({ plants:plants})
         
       })
       .catch(err => {
