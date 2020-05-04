@@ -1,6 +1,5 @@
 // Common modules
 const path = require('path')
-const cors = require('cors')
 // MongoDB
 const mongoose = require('mongoose')
 const dbKey = 'a5ZzeU0vf8r4ZZdO'
@@ -23,10 +22,8 @@ const bodyParser = require('body-parser'),
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use(cors())
-
 app.use(express.static(path.join(__dirname, 'build')));
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
