@@ -43,9 +43,9 @@ Angela dePasquale https://github.com/Angied521
 
 Khalid Muhammad https://github.com/KhalidM53
 
-Joseph Register https://github.com/jreg1258
+Lucas Gonzalez https://github.com/Lucas-bit
 
-Lucas Gonzalez lucasberatudgonzalez@gmail.com - https://github.com/Lucas-bit - https://lucas-bit.github.io/Nice-Portfolio/
+Joseph Register josephregister1258@gmail.com - https://github.com/jreg1258 - https://jreg1258.github.io/ResponsivePortfolio/
 
 
 
