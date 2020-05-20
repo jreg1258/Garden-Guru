@@ -2,6 +2,8 @@
 
 ![](garden-guru-login-screenshot.png) 
 
+https://garden-guru.herokuapp.com/
+
 ## About 
 A garden tracking mobile-friendly application aimed at helping users keep track of their plants to ensure they are receiving proper care. Users are able to search for their plants, add plants to their garden, remove plants as well as track the overall maintenance of their garden.  
 
